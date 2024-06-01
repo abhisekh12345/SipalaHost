@@ -14,7 +14,10 @@ module.exports = {
       },
       maxWidth: {
         '8xl': '82rem',
-      }
+      },
+      colors: {
+        'webGreen': '#63AB45',
+      },
     },
   },
   plugins: [],

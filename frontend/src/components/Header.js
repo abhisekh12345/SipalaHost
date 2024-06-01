@@ -53,9 +53,7 @@ const Header = () => {
                    <ReuseButton name="Contact Now" />
                 </div>
             </div>
-            <div className='newborder'>
-
-            </div>
+            
             </div>
           
         </div>
