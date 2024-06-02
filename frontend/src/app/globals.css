@@ -59,3 +59,49 @@
     -webkit-box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.15);
 }
+
+.openBoder:hover{
+    border: 1px solid #63AB45 ;
+}
+
+.openBoder:hover .changeBack{
+    background-color: #63AB45;
+}
+
+.openBoder:hover .hoveraeffect{
+    color: white !important;
+}
+
+.newLayOverlay{
+    background-color:  rgba(0, 0, 0, 0.5)
+}
+
+.newboxshadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.teamMember{
+    -webkit-box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+}
+
+.moreRounded{
+    border-radius: 60px;
+}
+
+.slick-dots li button{
+    padding-top: -200px !important; /* Add margin-top to the dots */
+ }
+
+.slick-dots li button:before {
+    color: gray !important; /* Change to your desired color for inactive dots */
+    font-size: 10px; /* Base size for dots */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Style for active dots */
+  .slick-dots li.slick-active button:before {
+    color: red !important; /* Change to your desired color for active dot */
+    font-size: 20px; /* Larger size for active dot */
+  }
+

@@ -68,7 +68,7 @@ const AboutCompany = () => {
             }}
           >
             <div className=" w-[850px]">
-              <h1 className="text-4xl promptSnaserif font-bold tracking-wider fo text-center text-gray-800">
+              <h1 className="text-4xl promptSnaserif font-extrabold tracking-wider fo text-center text-gray-800">
                 We Are Most Funning Company About Travel & Tours
               </h1>
             </div>

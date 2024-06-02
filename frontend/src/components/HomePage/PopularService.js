@@ -12,6 +12,7 @@ import { FaCat } from "react-icons/fa";
 import { GiBarracksTent } from "react-icons/gi";
 import { IoMdBonfire } from "react-icons/io";
 import { popSerData } from "../data/AllData";
+import GridServices from "./GridServices";
 
 const PopularService = () => {
   const sliderActive3Item = {
@@ -46,7 +47,7 @@ const PopularService = () => {
 
   return (
     <>
-      <div className="mt-10  overflow-hidden">
+      <div className="pt-10  overflow-hidden ">
         <div className=" pt-5">
           <div className="flex justify-center items-center">
             <motion.div
@@ -82,7 +83,7 @@ const PopularService = () => {
               </h1>
             </div>
           </motion.div>
-          <div className="mb-11 mt-16 max-w-8xl  mx-auto ">
+          <div className=" mt-16 max-w-8xl  mx-auto ">
             <div>
               <Slider {...sliderActive3Item}>
                 {popSerData.map((item) => {
@@ -179,6 +180,7 @@ const PopularService = () => {
               </Slider>
             </div>
           </div>
+          <GridServices />
         </div>
       </div>
     </>

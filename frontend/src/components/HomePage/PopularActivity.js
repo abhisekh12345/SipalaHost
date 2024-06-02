@@ -71,7 +71,7 @@ const PopularActivity = () => {
               hidden : {opacity:0,scale : 0}
             }}
             >
-              <p className="text-lg  aboutCom text-[#F7921E]">About company</p>
+              <p className="text-lg  aboutCom text-[#F7921E]">Popula Activity</p>
             </motion.div>
           </div>
           <div className="flex justify-center items-center  mt-9">
