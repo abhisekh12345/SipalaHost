@@ -13,6 +13,46 @@
    background-color: #F7921E;
 }
 
+.readMore{
+  
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid #e2e8f0;
+}
+
+.readMore .p {
+    color: black;
+}
+.readMore:hover{
+   background-color: #63AB45;
+}
+
+.readMore:hover .paraWhite{
+    color: white !important;
+}
+
+ .arrowBackG{
+    background-color: #63AB45;
+  
+ }
+
+.arrowColor{
+     color: white;
+}
+
+.readMore:hover .arrowBackG {
+    background-color: white;
+}
+
+.readMore:hover .arrowColor{
+    color: #63AB45;
+
+}
+
+
+.containerBack{
+    border: 1px solid red;
+}
+
 
 .newborder{
     border: solid #94a3b8 0.1px;
@@ -24,6 +64,7 @@
     font-weight: 400;
     font-style: normal;
 }
+
 
 .rubikamily {
     font-family: "Rubik", sans-serif;
@@ -105,3 +146,34 @@
     font-size: 20px; /* Larger size for active dot */
   }
 
+ .rotateBox{
+    
+    transform: rotate(-10deg);
+    display: inline-block;
+    background-color: #F7921E;
+    margin-top: -40px;
+ } 
+
+ .fachover{
+    background-color: #020617;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; 
+    margin-right: 10px;
+ }
+
+
+ .hofayo{
+    color: #6b7280;
+    transition: all 0.3s ease-in-out;
+
+ }
+
+ .fachover:hover{
+   background-color: #63AB45;
+ }
+
+ .fachover:hover .hofayo {
+    color: #f3f4f6;
+ }
+
+ 

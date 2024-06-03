@@ -209,3 +209,29 @@ export const popularTours = [
   }
 ];
 
+export const newsandBlog = [
+  {
+    id: 1,
+    img: "/assets/images/blog/blog-7.jpg",
+    date: "November 15, 2022",
+    title: "Meet Skeleton Svelte Taile Sind For Reactive UIs",
+    button: "Read More"
+  },
+  {
+    id: 2,
+    img: "/assets/images/blog/blog-8.jpg",
+    date: "November 15, 2022",
+    title: "Web Vitals Tools Boost Your to Sen Performance Scores",
+    button: "Read More"
+  },
+  {
+    id: 3,
+    img: "/assets/images/blog/blog-9.jpg",
+    date: "November 15, 2022",
+    title: "Smashing Podcast Episode See With Paul Billion-Dollar Idea",
+    button: "Read More"
+  }
+];
+
+
+

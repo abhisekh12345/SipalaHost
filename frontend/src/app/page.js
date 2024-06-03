@@ -1,5 +1,6 @@
 import Counterup from "@/components/Allcomponents/Counterup";
 import ReadyToTravel from "@/components/Allcomponents/ReadyToTravel";
+import Footer from "@/components/Footer";
 import AboutCompany from "@/components/HomePage/AboutCompany";
 import CheckAvailabilty from "@/components/HomePage/CheckAvailabilty";
 import HeroSection from "@/components/HomePage/HeroSection";
@@ -26,6 +27,7 @@ export default function Home() {
          <PopularTourPlace />
          <Testomonial />
          <NewsBlog />
+         <Footer />
        </>
   );
 }

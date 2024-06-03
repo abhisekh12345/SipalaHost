@@ -44,7 +44,7 @@ const Testomonial = () => {
   return (
     <>
       <div>
-        <div className="pb-5 ">
+        <div className=" ">
           <div
             className=" h-[800px] w-full relative"
             style={{
