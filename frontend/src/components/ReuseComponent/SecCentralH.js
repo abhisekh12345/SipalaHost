@@ -2,12 +2,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const CenterHeading = ({secboldTitle,colurTrue}) => {
+
+const SecCentralH = ({boldTitle,colurTrue}) => {
   return (
      <>
         <div>
         <motion.div
-            className="flex justify-center items-center  mt-9"
+            className="mt-9"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -18,8 +19,8 @@ const CenterHeading = ({secboldTitle,colurTrue}) => {
             }}
           >
             <div className=" w-[700px]">
-              <h1 className={ colurTrue ? "text-4xl promptSnaserif font-extrabold tracking-wider fo text-center text-gray-200" : "text-4xl promptSnaserif font-extrabold tracking-wider fo text-center text-gray-800" }>
-                {secboldTitle}
+              <h1 className={ colurTrue ? "text-4xl promptSnaserif font-extrabold tracking-wider  text-gray-200" : "text-4xl promptSnaserif font-extrabold tracking-wider text-gray-800" }>
+                {boldTitle}
               </h1>
             </div>
           </motion.div>
@@ -28,4 +29,4 @@ const CenterHeading = ({secboldTitle,colurTrue}) => {
   )
 }
 
-export default CenterHeading
+export default SecCentralH

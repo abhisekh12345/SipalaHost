@@ -176,4 +176,44 @@
     color: #f3f4f6;
  }
 
- 
+
+ .textColor{
+    color: black;
+ }
+
+.dropList{
+    border: 1px solid red;
+}
+
+.mainHeader{
+    position: relative;
+    border:  1px solid red;
+}
+
+.dropList{
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 250px;
+    border: 1px solid #cbd5e1;
+    background-color: #f1f5f9;
+    padding: 5px 15px;
+    z-index: 100000000;
+    border-radius: 10px;
+    display: none;
+}
+
+.hiddenDropli{
+    border-bottom: 1px solid #cbd5e1;
+    color: black;
+    padding: 10px 0px;
+}
+
+ul .hiddenDropli:last-child {
+    border-bottom: none;
+}
+
+
+.mainHeader:hover .dropList{
+    display: initial;
+}

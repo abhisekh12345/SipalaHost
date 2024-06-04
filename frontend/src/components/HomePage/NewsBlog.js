@@ -12,7 +12,7 @@ import { newsandBlog } from '../data/AllData';
 const NewsBlog = () => {
   return (
      <>
-        <div className=" pt-10 pb-20">
+        <div className=" pt-10 pb-20   mb-28">
             <div className='max-w-8xl mx-auto '>
                   <div>
                     <SmallHeadTag subname="News and Blog" />

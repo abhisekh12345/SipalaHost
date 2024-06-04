@@ -233,5 +233,14 @@ export const newsandBlog = [
   }
 ];
 
+export const allImages = [
+  { id: 1, img: "/assets/images/gallery/gl-1.jpg" },
+  { id: 2, img: "/assets/images/gallery/gl-2.jpg" },
+  { id: 3, img: "/assets/images/gallery/gl-3.jpg" },
+  { id: 4, img: "/assets/images/gallery/gl-4.jpg" },
+  { id: 5, img: "/assets/images/gallery/gl-5.jpg" },
+  { id: 6, img: "/assets/images/gallery/gl-3.jpg" }
+];
+
 
 

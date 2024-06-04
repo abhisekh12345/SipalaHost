@@ -41,7 +41,7 @@ const AboutCompany = () => {
 
   return (
     <>
-      <div className="mt-14 overflow-hidden">
+      <div className="mt-14 overflow-hidden relative z-1">
         <div className=" pt-5">
           <div className="flex justify-center items-center">
             <motion.div className="border border-gray-300 px-5 py-2 rounded-lg bg-[#63ab451a] "

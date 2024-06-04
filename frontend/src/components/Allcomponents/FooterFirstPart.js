@@ -12,7 +12,7 @@ const FooterFirstPart = () => {
   return (
     <>
       <div>
-        <div className="border-t border-gray-500 mb-3"></div>
+        <div className="border-t border-gray-700 mb-3"></div>
         <div className="grid grid-cols-4 items-center gap-4">
           <div className="">
             <div className="px-3 py-4">
@@ -143,7 +143,7 @@ const FooterFirstPart = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-500 mt-3"></div>
+        <div className="border-t border-gray-700 mt-3"></div>
       </div>
     </>
   );
