@@ -7,9 +7,8 @@ const FormInput = ({type,placeholder,multiline}) => {
         <input
           type={type}
           placeholder={placeholder}
-          className="h-[45px] px-2 textColor bg-gray-50"
+          className="h-[45px] px-2 textColor bg-gray-50 betweenWidth"
           multiline= {multiline}
-
         />
       </div>
     </>

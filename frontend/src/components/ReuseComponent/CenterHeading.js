@@ -7,7 +7,7 @@ const CenterHeading = ({secboldTitle,colurTrue}) => {
      <>
         <div>
         <motion.div
-            className="flex justify-center items-center  mt-9"
+            className="flex justify-center items-center  mt-9 px-6"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -17,7 +17,7 @@ const CenterHeading = ({secboldTitle,colurTrue}) => {
               hidden: { opacity: 0, y: 50 },
             }}
           >
-            <div className=" w-[700px]">
+            <div className="max-w-[700px]">
               <h1 className={ colurTrue ? "text-4xl promptSnaserif font-extrabold tracking-wider fo text-center text-gray-200" : "text-4xl promptSnaserif font-extrabold tracking-wider fo text-center text-gray-800" }>
                 {secboldTitle}
               </h1>

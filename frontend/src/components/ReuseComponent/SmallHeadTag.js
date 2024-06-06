@@ -17,7 +17,7 @@ const SmallHeadTag = ({subname,colurTrue}) => {
               hidden : {opacity:0,scale : 0}
             }}
             >
-              <p className={ colurTrue ? "text-lg  aboutCom text-[#F7921E]" : "text-lg  aboutCom text-[#63AB45]" } >{subname}</p>
+              <p className={ colurTrue ? "text-lg font-semibold aboutCom text-[#F7921E]" : "text-sm font-semibold  aboutCom text-[#63AB45]" } >{subname}</p>
             </motion.div>
           </div>
         </div>
