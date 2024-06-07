@@ -42,7 +42,7 @@ const Header = () => {
     <>
      <div className="">
       <div className={scroll ? " bg-[#1D231F] py-3 fixed transition ease-in-out duration-500 backdrop-blur-sm bg-opacity-90 z-20 w-full top-0 left-0" : "bg-[#1D231F]  py-3 fixed transition ease-in-out duration-500  z-20 w-full top-0 left-0"}>
-        <div className=" max-w-8xl mx-auto ">
+        <div className=" max-w-8xl mx-auto px-4">
           <div className="flex justify-between items-center">
             <div className="pl-3 md:pl-0">
               <Image

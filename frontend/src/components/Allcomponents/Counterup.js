@@ -14,10 +14,10 @@ const Counterup = () => {
   return (
    <ScrollTrigger onEnter={() => setConterUp(true)} onExit={() => setConterUp(false)} >
     <div className=" bg-slate-50">
-      <div className="max-w-8xl mx-auto">
+      <div className="max-w-8xl mx-auto px-9 ">
         <div className="pt-24 pb-28">
           <div className="max-w-8xl mx-auto">
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {happyTravelers.map((item) => {
                 return (
                   <div key={item.id}>

@@ -13,7 +13,7 @@ const Footer = () => {
           <FooterSlider />
         </div>
         <div>
-          <div className="max-w-8xl mx-auto mt-9 py-3 ">
+          <div className="max-w-8xl mx-auto mt-9 py-3 px-9 ">
             <div>
               <FooterFirstPart />
             </div>

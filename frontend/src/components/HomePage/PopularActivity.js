@@ -74,7 +74,7 @@ const PopularActivity = () => {
               <p className="text-lg  aboutCom text-[#F7921E]">Popula Activity</p>
             </motion.div>
           </div>
-          <div className="flex justify-center items-center  mt-9">
+          <div className="flex justify-center items-center px-9  mt-9">
             <motion.div className=" w-[500px]"
                initial="hidden"
             whileInView="visible"
@@ -90,8 +90,8 @@ const PopularActivity = () => {
               </h1>
             </motion.div>
           </div>
-          <div className='max-w-8xl mx-auto'>
-             <motion.div className='flex  items-center justify-center'
+          <div className='max-w-8xl mx-auto  px-9 xl:px-6 '>
+             <motion.div className='grid md:grid-cols-2 lg:grid-cols-3  items-center justify-center'
                 initial="hidden"
             whileInView="visible"
             viewport={{once : true}}
@@ -101,13 +101,15 @@ const PopularActivity = () => {
               hidden : {opacity:0,scale : 0}
             }}
               >
-              <div className='w-2/6 px-7 py-3 pt-5 bg-gray-50 rounded-xl'>
+             
+                 <div className=' px-7 py-3 pt-5 bg-gray-50 rounded-xl md:col-span-2 lg:col-span-1  md:mx-20 lg:mx-0 xl:mx-0 2xl:mx-0 mb-5 lg:mb-0'>
                    <FeaturesButton febutton={buttons} filterFunction={filterhandler} selected={select} />
-              </div>
-              <div className=' w-2/6 px-3 pl-9'>
+                  </div>
+              
+              <div className='mb-5 md:mb-0 px-3 pl-9'>
                     <PopularInfo  seeData={data} />
               </div>
-              <div className=' w-2/6'>
+              <div className='mb-5 md:mb-0'>
                    <div className='flex items-center justify-center '>
                    {
                     data.map((item) =>{

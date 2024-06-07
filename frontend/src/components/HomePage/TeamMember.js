@@ -13,15 +13,15 @@ const TeamMember = () => {
   return (
     <>
       <div className="pt-14 pb-20">
-        <div className="max-w-8xl mx-auto  ">
+        <div className="max-w-8xl mx-auto px-9 ">
           <div>
             <SmallHeadTag subname="Team Member" />
           </div>
           <div className="mb-11">
-            <CenterHeading boldTitle="We’ve Expert Team Members Meet With Team" />
+            <CenterHeading secboldTitle="We’ve Expert Team Members Meet With Team" />
           </div>
           <div>
-            <div className="grid grid-cols-3 gap-5 gap-y-9">
+            <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-9">
               {teamMembers.map((item) => {
                 return (
                   <div key={item.id}>
@@ -37,9 +37,9 @@ const TeamMember = () => {
                              />
                         </div>
                       </div>
-                      <div className="w-4/6">
+                      <div className="w-4/6 pl-3">
                         <div>
-                          <h5 className="text-xl font-bold">{item.title}</h5>
+                          <h5 className="text-lg sm:text-xl font-bold">{item.title}</h5>
                         </div>
                         <div>
                           <p className=" leading-7 promptSnaserif text-gray-500">

@@ -13,15 +13,15 @@ const NewsBlog = () => {
   return (
      <>
         <div className=" pt-10 pb-20   mb-28">
-            <div className='max-w-8xl mx-auto '>
+            <div className='max-w-8xl mx-auto px-9 '>
                   <div>
                     <SmallHeadTag subname="News and Blog" />
                   </div>
                   <div className='mb-9'>
-                     <CenterHeading boldTitle = "Amazing News & Blog For Every Single Update" />
+                     <CenterHeading secboldTitle = "Amazing News & Blog For Every Single Update" />
                   </div>
                   <div>
-                  <div className="grid grid-cols-3 gap-5 gap-y-10">
+                  <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 gap-y-10">
               {newsandBlog.map((item) => {
                 return (
                   <div key={item.id}>

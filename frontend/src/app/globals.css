@@ -359,10 +359,10 @@ li.mainHeader:hover .dropList {
 
 
   @media only screen and (min-width: 1024px) and (max-width: 1316px) {
-    .singleWholediv {
+    /* .singleWholediv {
       max-width: 220px;
       border: 1px solid green;
-    }
+    } */
 
     .betweenWidth{
         width: 160px;
@@ -396,10 +396,10 @@ li.mainHeader:hover .dropList {
 
 
 @media only screen and (min-width: 0px) and (max-width: 340px) {
-    .singleWholediv {
+    /* .singleWholediv {
         max-width: 200px;
         border: 1px solid green;
-      }
+      } */
   
       .betweenWidth{
           width: 150px;
@@ -414,3 +414,65 @@ li.mainHeader:hover .dropList {
   }
 
   
+
+  
+  @media only screen and (min-width: 0px) and (max-width: 405px) {
+    .smallDWid {
+      max-width: 180px;
+    }
+
+    .smAlltext{
+      font-size: 17px;
+    }
+
+    .smaLLPara{
+      font-size: 13px;
+    }
+
+    .IconSizeSmall{
+        width: 15px;
+        height: 15px;
+    }
+
+  } 
+
+  @media only screen and (min-width: 356px) and (max-width: 631px) {
+     .testominioalHeight{
+          height: 850px;
+     }
+
+  } 
+
+  @media only screen and (min-width: 288px) and (max-width: 356px) {
+     .testominioalHeight{
+          height: 950px;
+     }
+
+  } 
+
+
+  @media only screen and (min-width: 0px) and (max-width: 288px) {
+     .testominioalHeight{
+          height: 1111px;
+     }
+
+  } 
+  
+  
+
+  @media only screen and (min-width: 0px) and (max-width: 288px) {
+    .fotsmalSizing{
+        font-size: 14px;
+    }
+
+ } 
+
+  @media only screen and (min-width: 0px) and (max-width: 288px) {
+    .whenWrapGap{
+        margin: 3px;
+    }
+
+ } 
+
+
+ 

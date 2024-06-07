@@ -49,7 +49,7 @@ const PopularService = () => {
     <>
       <div className="pt-10  overflow-hidden ">
         <div className=" pt-5">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center px-9 sm:px-6 lg:px-0">
             <motion.div
               className="border border-gray-300 px-5 py-2 rounded-lg bg-[#63ab451a] "
               initial="hidden"
@@ -67,7 +67,7 @@ const PopularService = () => {
             </motion.div>
           </div>
           <motion.div
-            className="flex justify-center items-center  mt-9"
+            className="flex justify-center items-center  mt-9 px-9 sm:px-6 lg:px-0"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -83,20 +83,20 @@ const PopularService = () => {
               </h1>
             </div>
           </motion.div>
-          <div className=" mt-16 max-w-8xl  mx-auto ">
+          <div className=" mt-16 max-w-8xl  mx-auto  px-9 lg:px-0">
             <div>
               <Slider {...sliderActive3Item}>
                 {popSerData.map((item) => {
                   return (
                     <div key={item.id}>
-                      <div className=" w-[420px] px-6 py-4 wholebox">
+                      <div className=" smallDWid w-[320px] md:w-[340px]  lg:w-[390px] px-6 py-4 wholebox">
                         <div>
-                          <h1 className="promptSnaserif font-bold text-2xl mt-3">
+                          <h1 className="promptSnaserif font-bold smAlltext text-2xl mt-3">
                             {item.title}
                           </h1>
                         </div>
                         <div>
-                          <p className="mt-5 text-gray-500">
+                          <p className="mt-5 smaLLPara  text-gray-500">
                             {item.paragraph}
                           </p>
                         </div>
@@ -110,6 +110,7 @@ const PopularService = () => {
                                   color: "#94a3b8",
                                   marginRight: "5px",
                                 }}
+                                className="IconSizeSmall"
                               />
                             </div>
                             <div className="mr-4">
@@ -120,6 +121,7 @@ const PopularService = () => {
                                   color: "#94a3b8",
                                   marginRight: "5px",
                                 }}
+                                className="IconSizeSmall"
                               />
                             </div>
                             <div className="mr-4">
@@ -130,6 +132,7 @@ const PopularService = () => {
                                   color: "#94a3b8",
                                   marginRight: "5px",
                                 }}
+                                className="IconSizeSmall"
                               />
                             </div>
                             <div className="mr-4">
@@ -140,6 +143,7 @@ const PopularService = () => {
                                   color: "#94a3b8",
                                   marginRight: "5px",
                                 }}
+                                className="IconSizeSmall"
                               />
                             </div>
                           </div>
@@ -156,6 +160,7 @@ const PopularService = () => {
                                       height: "25px",
                                       color: "#f1f5f9",
                                     }}
+                                    className="IconSizeSmall"
                                   />
                                 </span>
                               </div>
@@ -168,7 +173,7 @@ const PopularService = () => {
                                 alt="Service Image"
                                 width={400}
                                 height={100}
-                                className="rounded-xl "
+                                className="rounded-xl"
                               />
                             </div>
                           </div>

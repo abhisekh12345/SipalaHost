@@ -30,7 +30,7 @@ const SliderMenu = ({funDis}) => {
 
   return (
     <div>
-      <div className="fixed top-0 left-0 z-50 bg-gray-50 border px-2 py-2 max-w-[260px] newHeight">
+      <div className="fixed top-0 left-0 z-50 bg-gray-50 border px-1 py-2 max-w-[260px] newHeight">
         <div>
             <div className="flex justify-end">
                 <RxCross1 onClick={funDis} />

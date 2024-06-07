@@ -13,19 +13,20 @@ import { SlCalender } from "react-icons/sl";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { popularTours } from "../data/AllData";
 
+
 const PopularTourPlace = () => {
   return (
     <>
       <div className="pb-20">
-        <div className="max-w-8xl mx-auto ">
+        <div className="max-w-8xl mx-auto px-9">
           <div>
             <SmallHeadTag subname="Popular Tour place" />
           </div>
           <div className="mb-11">
-            <CenterHeading boldTitle="Visit & Enjoy Adventure Life With Full Of Dreams" />
+            <CenterHeading secboldTitle="Visit & Enjoy Adventure Life With Full Of Dreams" />
           </div>
           <div>
-            <div className="grid grid-cols-4 gap-5 gap-y-10">
+            <div className="grid sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-5 gap-y-10">
               {popularTours.map((item) => {
                 return (
                   <div key={item.id}>
@@ -38,7 +39,8 @@ const PopularTourPlace = () => {
                               alt="Service Image"
                               width={400}
                               height={100}
-                              className="moreRounded"
+                              className="moreRounded w-full h-auto"
+
                             />
                           </div>
                         </div>

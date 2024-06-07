@@ -19,7 +19,7 @@ export default function Home() {
          <HeroSection />
          <AboutCompany />
          <CheckAvailabilty />
-         {/* <PopularActivity />
+         <PopularActivity />
          <PopularService />
          <ReadyToTravel />
          <Counterup />
@@ -27,7 +27,7 @@ export default function Home() {
          <PopularTourPlace />
          <Testomonial />
          <NewsBlog />
-         <Footer /> */}
+         <Footer />
        </>
   );
 }
