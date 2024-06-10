@@ -306,6 +306,32 @@ li.mainHeader:hover .dropList {
   }
 
 
+.site-layout .site-layout-background{
+    background-color: #ffffff;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.ant-layout-has-sider{
+   padding: 15px !important;
+}  
+
+.ant-layout-sider{
+    border-radius: 10px !important;
+}  
+
+.ant-layout-sider-children{
+    height : 95vh !important;
+    padding: 15px !important;
+
+}
+
+.ant-layout-header{
+    margin: 0 10px !important;
+}
+
+  
+
+
   @media only screen and (min-width: 0px) and (max-width: 315px) {
     .travelSmall {
       font-size: 35px;

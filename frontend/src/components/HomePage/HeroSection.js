@@ -16,7 +16,7 @@ const HeroSection = () => {
     infinite: true,
     speed: 800,
     fade: true,
-    // autoplay: true,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: (

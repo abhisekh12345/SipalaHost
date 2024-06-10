@@ -1,6 +1,7 @@
 import Counterup from "@/components/Allcomponents/Counterup";
 import ReadyToTravel from "@/components/Allcomponents/ReadyToTravel";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import AboutCompany from "@/components/HomePage/AboutCompany";
 import CheckAvailabilty from "@/components/HomePage/CheckAvailabilty";
 import HeroSection from "@/components/HomePage/HeroSection";
@@ -16,7 +17,10 @@ import Image from "next/image";
 export default function Home() {
   return (
        <>
-         <HeroSection />
+         <Header />
+          <div style={{marginTop : "90px",}}>
+            <HeroSection />
+          </div>
          <AboutCompany />
          <CheckAvailabilty />
          <PopularActivity />
