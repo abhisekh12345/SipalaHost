@@ -329,6 +329,9 @@ li.mainHeader:hover .dropList {
     margin: 0 10px !important;
 }
 
+.table-custom tr:not(:last-child) {
+    border-bottom: 1px solid #ccc; /* Customize the border color and width */
+}
   
 
 
