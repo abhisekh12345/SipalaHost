@@ -1,34 +1,50 @@
-"use client"
-import React, { useState } from 'react';
+import React from 'react';
+import Image from 'next/image';
 
 const DetailedItinerary = ({ itinerary }) => {
-    const [activeDay, setActiveDay] = useState(null);
-
-    const toggleDay = (index) => {
-        setActiveDay(activeDay === index ? null : index);
-    };
-
     return (
-        <div className="p-4">
-            <h3 className="text-xl font-bold mb-2">Detailed Itinerary</h3>
-            {itinerary.map((day, index) => (
-                <div key={index}>
-                    <div
-                        className="flex items-center cursor-pointer"
-                        onClick={() => toggleDay(index)}
-                    >
-                        <span className="mr-2">{`Day ${index + 1}:`}</span>
-                        <span className="font-bold">{day.title}</span>
-                        <span className="ml-auto">{activeDay === index ? '▲' : '▼'}</span>
+        <div className="detailed-itinerary p-4">
+            {itinerary.map((dayDetail, index) => (
+                <div key={index} className="mb-6">
+                    {/* Day */}
+                    <div className="text-gray-900 font-bold text-2xl mb-2">
+                        Day {index + 1}
                     </div>
-                    {activeDay === index && (
-                        <div className="mt-2 p-2 border-l-2">
-                            <p>{day.description}</p>
-                            {day.image && (
-                                <img src={day.image} alt={day.title} className="mt-2 w-full h-48 object-cover" />
-                            )}
+
+                    {/* Heading */}
+                    <div className="text-gray-900 text-xl font-bold mb-4">
+                        {dayDetail.title}
+                    </div>
+
+                    {/* Image */}
+                    {dayDetail.image && (
+                        <div className="mb-4">
+                            <Image
+                                src={dayDetail.image}
+                                alt={`Image of ${dayDetail.imageLocation}`}
+                                width={700} // Specify appropriate width
+                                height={400} // Specify appropriate height
+                                className="w-full h-[450px]"
+                            />
+                            <div className="text-left text-gray-900 mt-2">
+                                {`${dayDetail.imageLocation}`}
+                            </div>
                         </div>
                     )}
+
+                    {/* Paragraphs */}
+                    <div className="text-gray-700">
+                        {dayDetail.description.map((paragraph, pIndex) => (
+                            <p key={pIndex} className="mb-4 text-gray-950 text-sm tracking-wide leading-6">
+                                {paragraph}
+                            </p>
+                        ))}
+                    </div>
+
+                    {/* Overnight */}
+                    <div className="text-gray-900 mt-10">
+                        <p className='text-sm'>Overnight in {dayDetail.overnightLocation}</p>
+                    </div>
                 </div>
             ))}
         </div>

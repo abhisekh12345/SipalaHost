@@ -15,6 +15,10 @@ import Video from "@/components/ServiceDetails/Video";
 import FAQs from "@/components/ServiceDetails/FAQs";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BookingModal from "@/components/ServiceDetails/BookingModal";
+import BookingProcess from "@/components/ServiceDetails/BookingProcess";
+import NewCalendar from "@/components/ServiceDetails/NewCalendar";
+
 
 const page = () => {
   const data = {
@@ -26,7 +30,8 @@ const page = () => {
     trek: {
       name: "Everest Panorama Trek",
       days: 9,
-      shortdescription : "In this short and less and strenuous trek, walk in the foothills of Mt. Everest and experience the amazing views of the giant mountain surrounding the region.",
+      shortdescription:
+        "In this short and less and strenuous trek, walk in the foothills of Mt. Everest and experience the amazing views of the giant mountain surrounding the region.",
       highlights: [
         "Scenic mountain flight to and from Lukla.",
         "Experience Sherpa culture and lifestyle of mountain people in the heart of Himalaya.",
@@ -90,7 +95,24 @@ const page = () => {
 
         // Add more days as needed
       ],
-      note: "This is a physically demanding trek. Participants should be in good health.",
+      notes: [
+        {
+          title: "Note 1",
+          paragraphs: [
+            "Our standard itinerary might differ slightly due to unpredictable happenings and events out of our control. Factors such as flight cancellation/delay, unfavorable weather, natural calamities, newly implemented government rules, political affairs, trekkers’ health condition, etc., are possible. Evaluating the situation’s possible solutions allow the trekking to resume as much as possible based on the best alternatives. In these times, we look for your cooperation and flexibility.",
+            "It is advised you arrive a day before the trip start date so you can rest and it also gives you time to buy clothing equipment and gear required for the trek. Also, it is best if you book your international flights with spare days in Nepal before and after your trek in case of any flight delays or cancellations due to weather. Moreover, you have options to customize this trip where you can add on a sightseeing tour in Kathmandu, other adventure sports or day trips around the country before or after the trek.",
+          ],
+        },
+        {
+          title: "Lukla flight information",
+          paragraphs: [
+            "We would like to inform you regarding the Lukla flight details which may affect your itinerary. During peak seasons, (including March, April, May, October and November) the flight to Lukla will be operated from Ramechhap/Manthali due to air traffic expansion, which is about a 5 to 6-hour drive from Kathmandu. Whereas, during nonpeak seasons, (including January, February, June, July, August, September and December) the flight is operated from Kathmandu.",
+            "Please be aware that the decision regarding the operation of flights solely depends on the airline and is influenced by the volume of travelers during the specific month.",
+            "Unpleasant weather conditions, congested traffic in the Airport, unmanaged runway, topographical difficulties, etc., are the significant reasons for Lukla flight delay/cancellation. Therefore, if you intend on trekking in the land of Everest region, arranging additional one or two days in your trip is highly preferable. This will help in case of flight delay/cancellation and thus board on the pre-planned international flight.",
+          ],
+        },
+        // Add more notes as needed
+      ],
       priceIncludes: [
         "Airport transfers",
         "Accommodation in Kathmandu and during the trek",
@@ -104,36 +126,71 @@ const page = () => {
       ],
       detailedItinerary: [
         {
-          title: "Arrival in Kathmandu",
-          description:
-            "Upon your arrival at Tribhuvan International Airport...",
-          image: "/images/day1.jpg",
+          title: "Arrive in Kathmandu (1,400 m/4,592 ft) and Trek Preparation",
+          description: [
+            "Fly into Kathmandu's Tribhuvan International Airport and make your way to the airport's terminal after the immigration process. Third Rock Adventures' guide will be waiting for you holding a placard with your name printed on it. After a warm welcome, he will drive you to your hotel. Enjoy a welcome drink while checking in. You can rest for a while before attending a trip briefing. Later in the day, you will meet your trekking guide, who will brief you about your upcoming trek. You can go over your final packing list with him and buy or rent gear from Thamel if needed.",
+          ],
+          image: "",
+          imageLocation: "",
+          overnightLocation: "Kathmandu",
         },
         {
           title: "Flight to Lukla and trek to Phakding",
-          description:
-            "We take an early morning flight to Lukla and start our trek to Phakding...",
-          image: "/images/day2.jpg",
+          description: [
+            " You will catch your flight to Lukla from either Kathmandu Airport or the Manthali Airport in Ramechhap District. Flights to Lukla during the busy peak seasons (spring and autumn) are rerouted to Manthali Airport because of the congestion at the domestic airport in Kathmandu. It takes around 4 or 5 hours to reach Manthali by road. Since Lukla flights are scheduled early in the morning, you will have to start your journey at around 2 a.m. if you are flying from Manthali.",
+            "The flight to Tenzing Hillary Airport in Lukla is filled with great views and hair-raising thrills. The airport, which is built on the bluff of a rocky hill, is regarded as one of the most dangerous in the world. Only pilots who are specially trained to fly on this type of terrain are allowed to fly in this zone. The airport has a narrow runway with a slight tilt. Once you arrive at the airport, you will get your stuff, have some refreshments at one of the teahouses in Lukla, or begin your trek right away. The trail goes past the settlement and down to the Dudh Koshi River.",
+          ],
+          image: "/assets/images/place/place-4.jpg",
+          imageLocation: "Lukla",
+          overnightLocation: "Phakding",
         },
-        // Add more days as needed
+        {
+          title:
+            "Trek from Phakding to Namche Bazaar (3,440 m/11,284 ft) - 6 to 7 hours (10.5 km) trek",
+          description: [
+            "Your trek starts right after breakfast. Walk alongside the river and hike past stunning Buddhist art on stone (mani wall) and prayer wheels. There will be miniature Buddhist stupas (chortens) and prayer flags en route, protecting the trail from bad spirits. Your permits will be checked at the army checkpoint at the gate of the Sagarmatha National Park (a UNESCO World Heritage Site). Around midday, you will stop at a village en route for lunch.",
+            "The flight to Tenzing Hillary Airport in Lukla is filled with great views and hair-raising thrills. The airport, which is built on the bluff of a rocky hill, is regarded as one of the most dangerous in the world. Only pilots who are specially trained to fly on this type of terrain are allowed to fly in this zone. The airport has a narrow runway with a slight tilt. Once you arrive at the airport, you will get your stuff, have some refreshments at one of the teahouses in Lukla, or begin your trek right away. The trail goes past the settlement and down to the Dudh Koshi River.",
+            "Namche Bazaar is a large Sherpa town carved out on the side of a steep mountain face. The town stands like a natural amphitheater and offers gorgeous views of Tamserku, Khumbila, Kantega, and Kongde Ri. It is the most well-facilitated place in the region, with shops, restaurants, cafes, bakeries, spas, and banks lining its streets. If you are low on supplies (snacks, toilet paper rolls, medicines, etc.), you can get them from Namche. The busy town is also a trading hub for Sherpa villagers living close to Namche and Tibetans living close to the Nepal-Tibet border.",
+          ],
+          image: "/assets/images/place/place-5.jpg",
+          imageLocation: "namche bazzar",
+          overnightLocation: "Phakding",
+        },
       ],
       gears: {
         paragraphs: [
-          "For this trek, you will need the following gear and equipment...",
-          "It is important to pack wisely to ensure comfort and safety during the trek...",
+          "Here is a list of what you might want to pack for the hike. Please take this as a starting point. You’ll need layers of warmer clothing during the winter. We provide a 75 liter duffel bag for you to use for the trek. It will be given to you during your pre-trip meeting in Kathmandu. The duffle bag is yours to keep. Also, you can rent a sleeping bag and down jacket with us at the additional fee of USD 35 for each once you are in Kathmandu.",
         ],
         list: [
-          { icon: "/icons/boots.png", name: "Hiking Boots" },
-          { icon: "/icons/jacket.png", name: "Insulated Jacket" },
+          {
+            icon: "/assets/images/shop/product-9.jpg",
+            name: "Hiking Boots",
+            list: [
+              "Sun hat or cap (We'll provide you with a free Ace the Himalaya baseball cap.)",
+              "echnical fabric short (2) and long sleeve (2) shirts",
+              "Comfortable pants for inside the teahouses",
+            ],
+          },
+          {
+            icon: "/assets/images/shop/product-9.jpg",
+            name: "Insulated Jacket",
+            list: [
+              "Technical fabric base layer (light for warmer months, heavy for colder months)",
+              "Technical fabric short (2) and long sleeve (2) shirts",
+            ],
+          },
           // Add more gear as needed
         ],
       },
+
       importantInformation: [
-        "Ensure you have travel insurance.",
-        "Acclimatization is essential to prevent altitude sickness.",
-        "Carry sufficient cash as ATMs are not available in remote areas.",
+        "We give you a free duffel bag and baseball cap during your pre-trip meeting in Kathmandu. The duffel bag will be used to pack your trekking supplies.",
+        "For every two participants, we assign one porter. The duffel bag, which should weigh around 10 kg/22 lbs, will be carried by the porter throughout the walk.",
+        "To carry your daily necessities like cash, crucial papers, a water bottle or bladder, a camera, toiletries, sunscreen, a notebook, clothing, etc., you must have your own daypack (with a waterproof cover).",
+        "You can store your luggage (non- trekking items) at the hotel in Kathmandu.",
+        "Total luggage allotment allowance for Kathmandu-Lukla flight is 15 Kg/33 lbs including both duffel (10 Kg/22 lbs.) and backpack (5Kg/11 lbs.)",
       ],
-      mapImage: "/images/map.jpg",
+      mapImage: "/assets/images/Trip-map/Everest-Panoroma.jpg",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       faqs: [
         {
@@ -147,6 +204,9 @@ const page = () => {
         },
         // Add more FAQs as needed
       ],
+      availableDates: ["2024-06-15", "2024-06-20", "2024-06-25"], // Example dates
+      unavailableDates: ["2024-06-10", "2024-06-11", "2024-06-12"], // Example dates
+      tripDuration: 9,
     },
   };
 
@@ -155,26 +215,35 @@ const page = () => {
       <Header />
       <ImageSlider images={data.images} />
       <LocationBox />
-      <div className="grid grid-cols-3 max-w-8xl mx-auto px-6 gap-10 mb-[120px]">
+      <div className="grid grid-cols-3 max-w-8xl mx-auto px-6 gap-10 ">
         <div className="col-span-2 border border-green-600">
-          <TrekkingName name={data.trek.name} days={data.trek.days} shortdescription={data.trek.shortdescription} />
+          <TrekkingName
+            name={data.trek.name}
+            days={data.trek.days}
+            shortdescription={data.trek.shortdescription}
+          />
           <TripHighlights highlights={data.trek.highlights} />
           <TripOverview
             title={data.trek.overview.title}
             paragraphs={data.trek.overview.paragraphs}
           />
           <ShortItinerary itinerary={data.trek.shortItinerary} />
-          <Note text={data.trek.note} />
+          {data.trek.notes.map((note, index) => (
+            <Note key={index} title={note.title} paragraphs={note.paragraphs} />
+          ))}
+         
           <PriceIncludes includes={data.trek.priceIncludes} />
           <DetailedItinerary itinerary={data.trek.detailedItinerary} />
           <GearsEquipment gears={data.trek.gears} />
           <ImportantInformation information={data.trek.importantInformation} />
           <TripMap mapImage={data.trek.mapImage} />
           <Video videoUrl={data.trek.videoUrl} />
-          <FAQs faqs={data.trek.faqs} />
         </div>
-        <div className=" border border-green-600">two</div>
+        <div className=" border border-green-600">
+          two
+        </div>
       </div>
+      <FAQs faqs={data.trek.faqs} />
       <Footer />
     </>
   );

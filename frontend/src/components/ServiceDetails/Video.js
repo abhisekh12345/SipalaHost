@@ -8,7 +8,7 @@ const Video = ({ videoUrl }) => {
             <iframe
                 src={videoUrl}
                 title="Trip Video"
-                className="w-full h-64"
+                className="w-full h-[450px]"
                 allowFullScreen
             ></iframe>
         </div>

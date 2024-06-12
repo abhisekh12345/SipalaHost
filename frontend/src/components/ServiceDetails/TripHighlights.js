@@ -17,4 +17,5 @@ const TripHighlights = ({ highlights }) => {
     );
 };
 
+
 export default TripHighlights;
