@@ -15,9 +15,8 @@ import Video from "@/components/ServiceDetails/Video";
 import FAQs from "@/components/ServiceDetails/FAQs";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BookingModal from "@/components/ServiceDetails/BookingModal";
-import BookingProcess from "@/components/ServiceDetails/BookingProcess";
-import NewCalendar from "@/components/ServiceDetails/NewCalendar";
+import AssembleBooking from "@/components/ServiceDetails/AssembleBooking";
+
 
 
 const page = () => {
@@ -207,8 +206,17 @@ const page = () => {
       availableDates: ["2024-06-15", "2024-06-20", "2024-06-25"], // Example dates
       unavailableDates: ["2024-06-10", "2024-06-11", "2024-06-12"], // Example dates
       tripDuration: 9,
+      tripBooking : [
+        { title: "Ktm to phokhara", price: 200 },
+        { title: "phokhara to mustang", price: 800 },
+        { title: "mustang to uppermustang", price: 1000 },
+      ]
     },
   };
+
+ 
+
+ 
 
   return (
     <>
@@ -231,7 +239,6 @@ const page = () => {
           {data.trek.notes.map((note, index) => (
             <Note key={index} title={note.title} paragraphs={note.paragraphs} />
           ))}
-         
           <PriceIncludes includes={data.trek.priceIncludes} />
           <DetailedItinerary itinerary={data.trek.detailedItinerary} />
           <GearsEquipment gears={data.trek.gears} />
@@ -240,9 +247,10 @@ const page = () => {
           <Video videoUrl={data.trek.videoUrl} />
         </div>
         <div className=" border border-green-600">
-          two
+            two
         </div>
       </div>
+      <AssembleBooking  tourismInfo = {data.trek.tripBooking} />
       <FAQs faqs={data.trek.faqs} />
       <Footer />
     </>

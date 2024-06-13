@@ -1,34 +1,38 @@
-// slices/bookingSlice.js
 import { createSlice } from '@reduxjs/toolkit';
+
+const options = [
+  { id: 'option1', name: 'Extra Porter', price: 200 },
+  { id: 'option2', name: 'Guided Tour', price: 150 },
+  { id: 'option3', name: 'Meal Plan', price: 100 },
+];
 
 const initialState = {
   numberOfPeople: 1,
-  tripPrice: 1000, // Example base price for the trip
-  additionalServices: [],
-  serviceCharge: 50, // Example service charge
+  tripPricePerPerson: null, // Initialize as null or 0
+  selectedOptions: options.reduce((acc, option) => {
+    acc[option.id] = 1; // Default to 1
+    return acc;
+  }, {}),
+  serviceCharge: 50,
 };
 
 const bookingSlice = createSlice({
   name: 'booking',
   initialState,
   reducers: {
-    setNumberOfPeople: (state, action) => {
+    setNumberOfPeople(state, action) {
       state.numberOfPeople = action.payload;
     },
-    addService: (state, action) => {
-      const { serviceId, serviceName, servicePrice, quantity } = action.payload;
-      const existingService = state.additionalServices.find(service => service.serviceId === serviceId);
-      if (existingService) {
-        existingService.quantity = quantity;
-      } else {
-        state.additionalServices.push({ serviceId, serviceName, servicePrice, quantity });
-      }
+    updateOption(state, action) {
+      const { optionId, count } = action.payload;
+      state.selectedOptions[optionId] = count;
     },
-    removeService: (state, action) => {
-      state.additionalServices = state.additionalServices.filter(service => service.serviceId !== action.payload);
+    setTripPricePerPerson(state, action) {
+      state.tripPricePerPerson = action.payload;
     },
   },
 });
 
-export const { setNumberOfPeople, addService, removeService } = bookingSlice.actions;
+export const { setNumberOfPeople, updateOption, setTripPricePerPerson } = bookingSlice.actions;
+export const selectBooking = (state) => state.booking;
 export default bookingSlice.reducer;
