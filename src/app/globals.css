@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.conHover{
+    background-color:#63AB45;
+    transition: background-color 0.3s ease-in-out;
+}
+.conHover:hover{
+   background-color: #F7921E;
+}
+
+.readMore{
+  
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid #e2e8f0;
+}
+
+.readMore .p {
+    color: black;
+}
+.readMore:hover{
+   background-color: #63AB45;
+}
+
+.readMore:hover .paraWhite{
+    color: white !important;
+}
+
+ .arrowBackG{
+    background-color: #63AB45;
+  
+ }
+
+.arrowColor{
+     color: white;
+}
+
+.readMore:hover .arrowBackG {
+    background-color: white;
+}
+
+.readMore:hover .arrowColor{
+    color: #63AB45;
+
+}
+
+
+.containerBack{
+    border: 1px solid red;
+}
+
+
+.newborder{
+    border: solid #94a3b8 0.1px;
+    margin-top: 15px;
+}
+
+.aboutCom {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.rubikamily {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.smallParagraph {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.mainCard {
+    transition: 0.5s ease-in-out;
+}
+
+.mainCard:hover .smallParagraph {
+    max-height: 200px; /* Adjust based on the content height */
+    opacity: 1;
+}
+
+.promptSnaserif{
+    font-family: "Prompt", sans-serif;
+ 
+}
+
+.wholebox{
+    border-top: none;
+     border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.15);
+}
+
+.openBoder:hover{
+    border: 1px solid #63AB45 ;
+}
+
+.openBoder:hover .changeBack{
+    background-color: #63AB45;
+}
+
+.openBoder:hover .hoveraeffect{
+    color: white !important;
+}
+
+.newLayOverlay{
+    background-color:  rgba(0, 0, 0, 0.5)
+}
+
+.newboxshadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.teamMember{
+    -webkit-box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+}
+
+.moreRounded{
+    border-radius: 60px;
+}
+
+.slick-dots li button{
+    padding-top: -200px !important; /* Add margin-top to the dots */
+ }
+
+.slick-dots li button:before {
+    color: gray !important; /* Change to your desired color for inactive dots */
+    font-size: 10px; /* Base size for dots */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Style for active dots */
+  .slick-dots li.slick-active button:before {
+    color: red !important; /* Change to your desired color for active dot */
+    font-size: 20px; /* Larger size for active dot */
+  }
+
+ .rotateBox{
+    
+    transform: rotate(-10deg);
+    display: inline-block;
+    background-color: #F7921E;
+    margin-top: -40px;
+ } 
+
+ .fachover{
+    background-color: #020617;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; 
+    margin-right: 10px;
+ }
+
+
+ .hofayo{
+    color: #6b7280;
+    transition: all 0.3s ease-in-out;
+
+ }
+
+ .fachover:hover{
+   background-color: #63AB45;
+ }
+
+ .fachover:hover .hofayo {
+    color: #f3f4f6;
+ }
+
+
+ .textColor{
+    color: black;
+ }
+
+
+ /* Base styles */
+ul.flex {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+}
+
+li {
+    position: relative; /* This is important for the dropdown positioning */
+    margin-left: 7px;
+    cursor: pointer;
+ 
+    padding: 10px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropList {
+    display: none; /* Initially hide the dropdown */
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    background-color: #f1f5f9; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other elements */
+    list-style-type: none;
+    padding: 5px 10px;
+    padding-right: 15px;
+    border-radius: 10px;
+    min-width: 250px;
+}
+
+.dropList li {
+    padding: 10px; /* Adjust as needed */
+    white-space: nowrap;
+}
+
+.dropList li a {
+    color: #000; /* Adjust as needed */
+}
+
+.hiddenDropli{
+    border-bottom: 1px solid #cbd5e1;
+    color: black;
+    padding: 10px 0px;
+}
+
+.linkHover:hover {
+    color: #63AB45 !important;
+}
+
+ul .hiddenDropli:last-child {
+    border-bottom: none;
+}
+
+li.mainHeader:hover .dropList {
+    display: block; /* Show the dropdown on hover */
+}
+
+
+.mainHeader{
+   
+    margin-right: 1.5rem;
+}
+
+.mainHeader:hover .headerlinkhov{
+    color: #63AB45;
+}
+
+.slowShownavhid{
+    opacity: 0;
+}
+
+.slowShownav{
+    opacity: 1;
+    transition: opacity 1.2s ease-in-out;
+}
+
+
+.newHeight{
+    height: 100vh;
+}
+
+.allNewColor{
+   color: #64748b;
+}
+
+
+.custom-arrow {
+    
+    color: #f1f5f9 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 50% !important;
+    width: 70px !important;
+    height: 70px !important;
+    cursor: pointer !important;
+    border: 1px solid #94a3b8 !important;
+  }
+  
+  .custom-arrow:hover {
+    background-color: #63AB45 !important;
+  }
+  
+  .custom-arrow.prev {
+    left: -70px ; /* Adjust as needed */
+  }
+  
+  .custom-arrow.next {
+    right: -80px ; /* Adjust as needed */
+  }
+
+  /* Override the default slick slider arrow styles */
+.slick-prev:before, .slick-next:before {
+    content: '' !important;
+  }
+
+
+.site-layout .site-layout-background{
+    background-color: #ffffff;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.ant-layout-has-sider{
+   padding: 15px !important;
+}  
+
+.ant-layout-sider{
+    border-radius: 10px !important;
+}  
+
+.ant-layout-sider-children{
+    height : 95vh !important;
+    padding: 15px !important;
+
+}
+
+.ant-layout-header{
+    margin: 0 10px !important;
+}
+
+.table-custom tr:not(:last-child) {
+    border-bottom: 1px solid #ccc; /* Customize the border color and width */
+}
+  
+/* faqStyles.css */
+.faq-enter {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  
+  .faq-enter-active {
+    max-height: 200px; /* Adjust based on your content */
+    opacity: 1;
+    transition: max-height 1s ease, opacity 1s ease;
+  }
+  
+  .faq-exit {
+    max-height: 200px; /* Adjust based on your content */
+    opacity: 1;
+    overflow: hidden;
+  }
+  
+  .faq-exit-active {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1s ease, opacity 1s ease;
+  }
+  
+
+
+  @media only screen and (min-width: 0px) and (max-width: 315px) {
+    .travelSmall {
+      font-size: 35px;
+    }
+  }
+
+
+  @media only screen and (min-width: 290px) and (max-width: 355px) {
+     .carWiHi{
+        width: 240px;
+        height: 300px;
+     }
+
+     .cartext {
+        font-size: 15px;
+     }
+
+     .carpara{
+        font-size: 14px;
+     }
+
+     .carWidth{
+        width: 200px;
+     }
+  }
+
+
+  @media only screen and (min-width: 0px) and (max-width: 289px) {
+     .carWiHi{
+        width: 190px;
+        height: 280px;
+     }
+
+     .cartext {
+        font-size: 14px;
+     }
+
+     .carpara{
+        font-size: 13px;
+     }
+
+     .carWidth{
+        width: 160px;
+     }
+
+     .carIcon{
+        height: 5px;
+        width: 5px;
+     }
+  }
+
+
+  @media only screen and (min-width: 1024px) and (max-width: 1316px) {
+    /* .singleWholediv {
+      max-width: 220px;
+      border: 1px solid green;
+    } */
+
+    .betweenWidth{
+        width: 160px;
+    }
+
+    .commentWidth{
+        width: 450px;
+    }
+  }
+
+
+  @media only screen and (min-width: 492px) and (max-width: 665px) {
+    .commentWidth {
+       width: 400px;
+    }
+  }
+
+  @media only screen and (min-width: 369px) and (max-width: 491px) {
+    .commentWidth {
+       width: 300px;
+    }
+  }
+
+
+  @media only screen and (min-width: 0px) and (max-width: 368px) {
+    .commentWidth {
+       width: 200px;
+    }
+  }
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 340px) {
+    /* .singleWholediv {
+        max-width: 200px;
+        border: 1px solid green;
+      } */
+  
+      .betweenWidth{
+          width: 150px;
+      }
+
+      .hideShowlogo{
+         display: none;
+      }
+  
+
+      
+  }
+
+  
+
+  
+  @media only screen and (min-width: 0px) and (max-width: 405px) {
+    .smallDWid {
+      max-width: 180px;
+    }
+
+    .smAlltext{
+      font-size: 17px;
+    }
+
+    .smaLLPara{
+      font-size: 13px;
+    }
+
+    .IconSizeSmall{
+        width: 15px;
+        height: 15px;
+    }
+
+  } 
+
+  @media only screen and (min-width: 356px) and (max-width: 631px) {
+     .testominioalHeight{
+          height: 850px;
+     }
+
+  } 
+
+  @media only screen and (min-width: 288px) and (max-width: 356px) {
+     .testominioalHeight{
+          height: 950px;
+     }
+
+  } 
+
+
+  @media only screen and (min-width: 0px) and (max-width: 288px) {
+     .testominioalHeight{
+          height: 1111px;
+     }
+
+  } 
+  
+  
+
+  @media only screen and (min-width: 0px) and (max-width: 288px) {
+    .fotsmalSizing{
+        font-size: 14px;
+    }
+
+ } 
+
+  @media only screen and (min-width: 0px) and (max-width: 288px) {
+    .whenWrapGap{
+        margin: 3px;
+    }
+
+ } 
+
+
+ 
