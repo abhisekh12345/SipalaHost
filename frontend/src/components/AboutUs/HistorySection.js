@@ -3,14 +3,14 @@ import Image from 'next/image';
 const HistorySection = ({ history }) => {
   return (
     <div className="mb-12">
-      <h2 className="text-xl font-bold mb-4 text-gray-900">{history.title}</h2>
+      <h2 className="text-2xl font-bold mb-4 text-gray-900">{history.title}</h2>
       {history.data.map((item, index) => (
         <div
           key={index}
           className={`flex flex-col md:flex-row ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}  mb-8 gap-6`}
         >
           <div className="md:w-1/2 ">
-            <p className="text-lg tracking-wide leading-6 text-gray-800">{item.text}</p>
+            <p className="normal-case tracking-wide leading-6 text-gray-800">{item.text}</p>
           </div>
           <div className="md:w-1/2 ">
             <Image
