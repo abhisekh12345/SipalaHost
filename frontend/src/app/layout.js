@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import StoreProviders from "@/redux/StoreProviders";
+import Footer from "@/components/Footer";
 
 
 
@@ -20,9 +21,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
        <StoreProviders >
-           <main>
+         <Header />
+           <main style={{marginTop : "90px",}}>
              {children}
            </main>
+           <Footer />
        </StoreProviders>
       </body>
     </html>

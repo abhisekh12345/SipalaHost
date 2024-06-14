@@ -19,7 +19,7 @@ const ImageSlider = ({ images }) => {
 
   return (
     <>
-    <div className='w-full mt-[30px] overflow-hidden'>
+    <div className='w-full mt-[-10px] overflow-hidden'>
     <Slider {...settings} >
       {images.map((image, index) => (
         <div key={index} className="max-h-[600px]">

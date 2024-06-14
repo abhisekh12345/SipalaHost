@@ -220,7 +220,7 @@ const page = () => {
 
   return (
     <>
-      <Header />
+
       <ImageSlider images={data.images} />
       <LocationBox />
       <div className="grid grid-cols-3 max-w-8xl mx-auto px-6 gap-10 ">
@@ -252,7 +252,7 @@ const page = () => {
       </div>
       <AssembleBooking  tourismInfo = {data.trek.tripBooking} />
       <FAQs faqs={data.trek.faqs} />
-      <Footer />
+   
     </>
   );
 };

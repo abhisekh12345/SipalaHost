@@ -17,10 +17,9 @@ import Image from "next/image";
 export default function Home() {
   return (
        <>
-         <Header />
-          <div style={{marginTop : "90px",}}>
-            <HeroSection />
-          </div>
+      
+    
+         <HeroSection />
          <AboutCompany />
          <CheckAvailabilty />
          <PopularActivity />
@@ -31,7 +30,7 @@ export default function Home() {
          <PopularTourPlace />
          <Testomonial />
          <NewsBlog />
-         <Footer />
+     
        </>
   );
 }

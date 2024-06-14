@@ -66,7 +66,7 @@ const Header = () => {
                 <li className="mainHeader">
                   <div className="">
                     <div className="flex items-center">
-                      <Link href="" className="text-gray-100 headerlinkhov ">
+                      <Link href="/service/nepal" className="text-gray-100 headerlinkhov ">
                         Tours
                       </Link>
                       <FaAngleDown className="ml-2 text-gray-200 headerlinkhov" />
@@ -74,10 +74,10 @@ const Header = () => {
                     <div>
                       <ul className="dropList">
                         <li className="hiddenDropli">
-                          <Link href="" className="linkHover ">Tours</Link>
+                          <Link href="/service/nepal" className="linkHover ">Nepal tour</Link>
                         </li>
                         <li className="hiddenDropli">
-                          <Link href=""  className="linkHover">Tours Details</Link>
+                          <Link href=""  className="linkHover">Bhutan tour</Link>
                         </li>
                       </ul>
                     </div>
@@ -134,7 +134,7 @@ const Header = () => {
                     <div>
                       <ul className="dropList">
                         <li className="hiddenDropli">
-                          <Link href="" className="linkHover ">About Us</Link>
+                          <Link href="/about-us" className="linkHover ">About Us</Link>
                         </li>
                         <li className="hiddenDropli">
                           <Link href=""  className="linkHover">Our Gallery</Link>
