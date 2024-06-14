@@ -58,7 +58,7 @@ const Header = () => {
               <ul className=" hidden  xl:flex">
                 <li className="mainHeader cursor-pointer">
                   <div>
-                    <Link href="" className="text-gray-100 headerlinkhov">
+                    <Link href="/" className="text-gray-100 headerlinkhov">
                       Home
                     </Link>
                   </div>
